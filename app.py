@@ -6,7 +6,7 @@ import numpy as np
 
 app = Flask(__name__)
 
-model = load_model('my_best_pipeline_NB')
+model = load_model('my_best_pipeline_NB_New')
 cols = ['gender','age','hypertension','heart_disease', 'ever_married', 'work_type', 'Residence_type', 'avg_glucose_level', 'bmi', 'smoking_status']
 
 @app.route('/')

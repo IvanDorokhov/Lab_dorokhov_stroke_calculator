@@ -19,20 +19,40 @@
 
      <!-- Form to enter new data for predictions  -->
     <form action="{{ url_for('predict')}}"method="POST">
-    	<input type="text" name="gender" placeholder="Gender" required="required" /><br>
+    	<input type="text" name="gender" placeholder="Gender" required="required" list="vibor2"/>
+      <datalist id="vibor2">
+        <option value="1">
+        <option value="2">
+        </datalist><br>
         <input type="text" name="age" placeholder="AGE" required="required" /><br>
-        <input type="text" name="hypertension" placeholder="Hypertension" required="required" /><br>
-        <input type="text" name="heart_disease" placeholder="Heart_disease" required="required" /><br>
-        <input type="text" name="ever_married" placeholder="Ever_married" required="required" /><br>
-        <input type="text" name="work_type" placeholder="Work_type" required="required" /><br>
-        <input type="text" name="Residence_type" placeholder="Residence_type" required="required" /><br>
+        <input type="text" name="hypertension" placeholder="Hypertension" required="required" list="vibor"/><br>
+        <input type="text" name="heart_disease" placeholder="Heart_disease" required="required" list="vibor" /><br>
+        <input type="text" name="ever_married" placeholder="Ever_married" required="required" list="vibor"/>
+        <datalist id="vibor">
+          <option value="0">
+          <option value="1">
+        </datalist><br>
+        <input type="text" name="work_type" placeholder="Work_type" required="required" list="vibor1" />
+        <datalist id="vibor1">
+          <option value="0">
+          <option value="1">
+          <option value="2">
+          <option value="3">
+        </datalist><br>
+        <input type="text" name="Residence_type" placeholder="Residence_type" required="required" list="vibor3"/>
+        <datalist id="vibor3">
+          <option value="1">
+          <option value="2">
+        </datalist><br>
           <input type="text" name="avg_glucose_level" placeholder="Avg_glucose_level" required="required" /><br>
           <input type="text" name="bmi" placeholder="BMI" required="required" /><br>
-          <input type="text" name="sex" placeholder="Smoking_status" required="required" /><br>
+          <input type="text" name="sex" placeholder="Smoking_status" required="required" list="vibor1"/><br>
 
         <button type="submit" class="btn btn-primary btn-block btn-large">Прогноз</button>
     </form>
 
+  <div class="ht1">
+    </div>
    <br>
    <br>
   
